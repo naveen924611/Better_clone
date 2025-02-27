@@ -212,13 +212,13 @@
   color: white;
 }
 .c{
-  display: flex;
-  flex-direction: row;
+  display: flex !important;
+  flex-direction: row !important;
 
 }
 .c1{
-  display: flex;
-  flex-direction: row-reverse;
+  display: flex !important;
+  flex-direction: row-reverse !important;
 }
 .c img{
   height:245px;
