@@ -5,7 +5,7 @@ import { faStopwatch, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
 export default function Home() {
-  const [imageSrc, setImageSrc] = useState("/Arian.png");
+  const [imageSrc, setImageSrc] = useState("./Arian.png");
   const [curr, setCurr] = useState("Arian");
 
   // State to track the active button (Our products, Calculators, Guides & FAQs)
