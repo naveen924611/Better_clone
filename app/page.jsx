@@ -185,7 +185,7 @@ export default function Home() {
         </div>
         <div className="grid-container">
           {/* Render cards based on the active button */}
-          {cardData[activeButton].map((card, index) => (
+{/*           {cardData[activeButton].map((card, index) => (
             <div
               key={index}
               className={`card ${index === 1 || index === 2 ? "large c" : ""} ${index == 2 ? "c1" : ""} `}
@@ -199,7 +199,23 @@ export default function Home() {
               </div>
               <img src={card.imageSrc} alt={card.title} />
             </div>
-          ))}
+          ))} */}
+            {cardData[activeButton].map((card, index) => (
+  <div
+    key={index}
+    className={`card ${index === 1 || index === 2 ? "large c" : ""} ${index === 2 ? "c1" : ""}`}
+  >
+    <div>
+      <h2>{card.title}</h2>
+      {card.description && <p>{card.description}</p>}
+      <button className="arrow-button">
+        <FontAwesomeIcon icon={faArrowRight} />
+      </button>
+    </div>
+    <img src={card.imageSrc} alt={card.title} />
+  </div>
+))}
+
         </div>
       </div>
     </div>
