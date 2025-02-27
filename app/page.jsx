@@ -108,7 +108,7 @@ export default function Home() {
             </div>
           </div>
           <div className="three">
-            <img src="/cong.png" alt="Description" width={500} height={300} />
+            <img src="./cong.png" alt="Description" width={500} height={300} />
           </div>
           <div className="three">Google</div>
         </div>
@@ -122,7 +122,7 @@ export default function Home() {
             <button
               className={curr === "Arian" ? "active" : ""}
               onClick={() => {
-                setImageSrc("/Arian.png");
+                setImageSrc("./Arian.png");
                 setCurr("Arian");
               }}
             >
@@ -131,7 +131,7 @@ export default function Home() {
             <button
               className={curr === "Amanda" ? "active" : ""}
               onClick={() => {
-                setImageSrc("/Amanda.png");
+                setImageSrc("./Amanda.png");
                 setCurr("Amanda");
               }}
             >
@@ -140,7 +140,7 @@ export default function Home() {
             <button
               className={curr === "Paul" ? "active" : ""}
               onClick={() => {
-                setImageSrc("/Paul.png");
+                setImageSrc("./Paul.png");
                 setCurr("Paul");
               }}
             >
