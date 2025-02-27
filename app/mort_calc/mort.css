@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Calculator Container */
+.calculator-container {
+  max-width: 100%;
+  margin: 0;
+  padding: 80px 60px;
+  background-color: rgba(59, 151, 79, 0.142);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.calculator-container h1 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #00412f;
+}
+
+.calculator-container p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Home Price Section */
+.home-price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.home-price,
+.monthly-payment {
+  flex: 1;
+}
+
+.home-price h2,
+.monthly-payment h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.home-price .input-container,
+.input-group .input-container {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid #ddd; */
+  outline: none;
+  border-radius: 4px;
+  padding: 10px;
+  padding-top: 16px;
+  padding-bottom: 0px;
+}
+.home-price .input-container{
+  padding: 10px !important; 
+  width:246px ;
+  height: 70px;
+  border: 1px solid;
+  input{
+    font-size: 38px !important;
+  }
+   span{
+    font-size: 38px !important;
+   }
+}
+
+.home-price .input-container span,
+.input-group .input-container span {
+  font-size: 16px;
+  margin-right: 5px;
+}
+.input-group .input-container .percentage{
+  width: 26px !important;
+  margin-right: 8px;
+  /* font-size: 24px !important; */
+}
+.input-group .input-container .down-pay{
+ width: 140px;
+ padding-right: 30px;
+}
+.home-price .input-container input,
+.input-group .input-container input {
+  border: none;
+  font-size: 16px;
+  width: 100%;
+  outline: none;
+  
+}
+.input-container input::placeholder {
+  color: #999; /* Light gray color for placeholder text */
+  font-size: 16px; /* Adjust font size as needed */
+  font-weight: normal;
+}
+
+.home-price {
+  margin-right: 60px;
+}
+
+.home-price .input-container {
+  width: 50%;
+}
+.home-price .g3{
+  margin-left: 10px;
+}
+
+/* Remove spin buttons on number inputs */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+.line{
+  width: 0px;
+  height: 52px;
+  position: absolute;
+  right: 50px;  
+  top:0.02px;
+  background: #00000060;
+  border-color: #0000004d;
+  margin: 0px;
+  padding: 0px;
+  /* border-width: 1px; */
+  outline: none !important;
+}
+.per-cen{
+  position: absolute;
+  right: 0;
+  
+
+}
+input,
+span {
+  font-weight: bold;
+  font-size: 30px;
+  color: #003020;
+}
+
+.monthly-payment p {
+  font-size: 32px;
+  font-weight: bold;
+  color: #00412f;
+}
+
+/* Pre-Approved Button */
+.pre-approval-button {
+  padding: 15px 30px;
+  font-size: 16px;
+  color: white;
+  background-color: #00412f;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.pre-approval-button:hover {
+  background-color: #003020;
+}
+
+/* Slider Section */
+.slider-section {
+  margin-bottom: 30px;
+}
+
+/* Custom Range Slider */
+.custom-range {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: #EBF2EC; /* Light green for unfilled track */
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+/* Track (Default State) */
+.custom-range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(to right, #3fac8d 0%, #3fac8d var(--progress), #3fa94f var(--progress), #26b83c 100%);
+  border-radius: 5px;
+  position: relative;
+}
+
+/* Firefox: Filled Portion */
+.custom-range::-moz-range-progress {
+  background: #3fac8d;
+  height: 6px;
+  border-radius: 5px;
+}
+
+/* Firefox: Unfilled Portion */
+.custom-range::-moz-range-track {
+  background: #EBF2EC;
+  height: 6px;
+  border-radius: 5px;
+}
+
+/* Thumb (Chrome, Safari, Edge) */
+.custom-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #00412f; /* Dark green thumb */
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -5px;
+  position: relative;
+}
+
+/* Thumb (Firefox) */
+.custom-range::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #54796e;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Input Fields */
+.input-fields {
+  display: flex;
+  /* grid-template-columns: repeat(2, 1fr); */
+  gap: 10px;
+
+}
+
+.input-group {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid  rgba(0, 0, 0, 0.429);
+  border-radius: 6px;
+  /* scale: 0.6; */
+  position: relative;
+  width: auto;
+  padding:6px;
+}
+
+.input-group label {
+  font-size: 12px;
+  font-weight: 400;
+left: 6px;
+top: 3px;
+  color: #575656;
+  margin-bottom: 5px;
+  height: 10px;
+  position: absolute;
+}
+.intr{
+  margin-left: 180px;
+}
+
+.input-container ,.input-group{
+  background: white !important;
+}
